@@ -15,6 +15,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model, @AuthenticationPrincipal OidcUser principal) {
         if (principal != null) {
+            System.out.println("JWT : [" + principal.getIdToken().getTokenValue() + "]");
             model.addAttribute("profile", principal.getClaims());
         }
         return "index";

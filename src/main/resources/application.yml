@@ -13,8 +13,8 @@ spring:
       client:
         registration:
           auth0:
-            client-id: {CLIENT_ID}
-            client-secret: {CLIENT_SECRET}
+            client-id: fib7waTwviT4oqu0fAWh90ygh95UGpXD
+            client-secret: 6LOGzUwfHIifDC3V1uaV8kQ3SoEuBXdrlRDeS_yreWPNJxMZ8cQO55Ke-pXsyrUA
             scope:
               - openid
               - profile
@@ -22,4 +22,4 @@ spring:
         provider:
           auth0:
             # trailing slash is important!
-            issuer-uri: https://{DOMAIN}/
+            issuer-uri: https://fleetscooterson.us.auth0.com/

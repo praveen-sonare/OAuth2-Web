@@ -26,6 +26,7 @@ public class ProfileController {
     @GetMapping("/profile")
     public String profile(Model model, @AuthenticationPrincipal OidcUser oidcUser) {
         model.addAttribute("profile", oidcUser.getClaims());
+        model.addAttribute("token", oidcUser.getIdToken().getTokenValue());
         model.addAttribute("profileJson", claimsToJson(oidcUser.getClaims()));
         return "profile";
     }

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-docker build -t auth0-samples/auth0-spring-boot-mvc-login .
-docker run -p 3000:3000 -it auth0-samples/auth0-spring-boot-mvc-login
+docker build -t token .
+docker run -p 000:3000 -it token

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-docker build -t token .
-docker run -p 000:3000 -it token
+sudo docker build -t token .
+sudo docker run -p 3000:3000 -it token
